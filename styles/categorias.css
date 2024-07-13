@@ -1,0 +1,15 @@
+/* Categoria 1 */
+.categoria-1{
+    color: black;
+}
+.categorias__enlases--activo a{
+    color: #008cff;
+}
+
+@media (min-width:768px){
+    .container__categoria__1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: start;
+    }
+}

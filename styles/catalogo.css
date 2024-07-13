@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Playwrite+ES&display=swap');
+:root{
+    --primario: #008cff;
+    --pirmarioOscuro: #003b57;
+    --blanco: #FFF;
+    --negro: #000;
+    --fuentePrincipal: "Libre Franklin", sans-serif;
+}
+/* Globales */
+*{
+    font-family: var(--fuentePrincipal);
+}
+.text-white{
+    color: var(--blanco);
+}
+.text-black{
+    color: var(--negro);
+    font-size: .9rem;
+}
+p{
+    font-size: 1.8rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3{
+    text-align: center;
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+}
+
+/* Navegacion */
+.navegacion__1{
+    display: flex;
+    justify-content: space-between;
+}
+.navegacion{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    gap: 1.5rem;
+}
+.navegacion__enlases{
+    color: var(--blanco);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.nav__enlases--activo,
+.navegacion__enlases:hover{
+    color: var(--primario);
+}
+.navegacion__img{
+    width: 5rem;
+    margin-left: 1rem;
+}
+/* Carrousel */
+.carrousel__altura{
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+.carrousel__altura img{
+    object-fit: cover;
+}
+/* main */
+/* main Categorias */
+.categorias__enlases{
+    margin-top: .5rem;
+}
+.categorias__enlases a{
+    text-decoration: none;
+    color: #6c757d;
+}
+.categorias__enlases a:hover{
+    color: var(--primario);
+    text-decoration: underline;
+}
+/* Main catalogo */
+.card-body h3{
+    color: var(--negro);
+    font-size: 1.3rem;
+}
+@media (min-width:768px){
+    .container__catalogo{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        text-align: start;
+    }    
+}
+.container__catalogo,
+.container__categoria__1{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    /* text-align: center;  */
+    gap: 1rem;
+}
+/* .container__categoria__2{
+    text-align: start;
+} */
